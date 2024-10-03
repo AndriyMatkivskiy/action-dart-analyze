@@ -35,7 +35,7 @@ export async function comment(params: { message: string, reacts?: CommentReact[]
       }
     }
   } catch (error) {
-    console.log(`Couldn't comment "${params.message} with reacts ${params.reacts}`);
+    console.log(`Couldn't comment "${params.message} with reacts ${params.reacts}, error: \n${error}`);
   }
 }
 
